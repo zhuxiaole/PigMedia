@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        mavenLocal()
     }
 }
 dependencyResolutionManagement {
@@ -10,7 +11,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
+    }
+    versionCatalogs {
+        create("libs") {
+            from("org.zhuxiaole.gradle:catalog:0.0.1")
+        }
     }
 }
 rootProject.name = "PigMedia"
-include ':app'
+include(":app")
