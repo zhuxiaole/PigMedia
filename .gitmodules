@@ -1,0 +1,3 @@
+[submodule "PigGradleCatalog"]
+	path = PigGradleCatalog
+	url = git@github.com:zhuxiaole/PigGradleCatalog.git
