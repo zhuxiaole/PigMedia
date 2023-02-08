@@ -3,7 +3,6 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
-        mavenLocal()
     }
 }
 dependencyResolutionManagement {
@@ -11,11 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        mavenLocal()
     }
     versionCatalogs {
         create("libs") {
-            from("org.zhuxiaole.gradle:catalog:0.0.1")
+            from(files("../PigGradleCatalog/libs.versions.toml"))
         }
     }
 }
